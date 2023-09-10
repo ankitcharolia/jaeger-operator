@@ -260,7 +260,7 @@ func calculateReplicaShards(policyType esv1.RedundancyPolicyType, dataNodes int)
 	case esv1.ZeroRedundancy:
 		return 0
 	default:
-		return 1
+		return 0
 	}
 }
 
